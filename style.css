@@ -1,0 +1,59 @@
+/* 
+    Document   : style.css
+    Created on : 17-ott-2011, 21.16.24
+    Author     : luigi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#main{ 
+    margin: 0 auto; 
+    min-height: 400px;
+    width: 960px; 
+}
+
+aside{ 
+    float: left; width: 200px;
+}
+
+aside + div{
+    margin-left: 200px;
+}
+
+#jls_slides{ 
+    padding: 0px; margin: 0;
+    height: 400px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.jls-slide{
+    padding: 0; margin: 0;
+}
+
+.jls-slide-description{
+    padding: 0; margin: 0;
+    bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.jls-slide-description p{ 
+    padding: 10px; margin: 0;
+    color: #ffffff;
+}
+
+.jls-slider {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid;
+}
+

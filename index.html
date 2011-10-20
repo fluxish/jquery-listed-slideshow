@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>jQuery Listed SlideShow</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="jls_container">
+                <aside>
+                    <ul id="jls_list">
+                        <li><a href="#first" style="color:blue">First</a></li>
+                        <li><a href="#second" style="color:green">Second</a></li>
+                        <li><a href="#third" style="color:red">Third</a></li>
+                    </ul>
+                </aside>
+                <div>
+                    <div id="jls_slides">
+                        <a name="first"></a><img src="img/img1.jpg" title="Blue forest" alt="This is a blue forest">
+                        <a name="second"></a><img src="img/img2.jpg" title="Field" alt="This is a field">
+                        <a name="third"></a><img src="img/img3.jpg" title="Green trees" alt="Those are green trees">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="libs/jquery-1.6.4.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+        <script src="jquery_listed_slideshow.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#jls_container').listed_slideshow();
+        });
+        </script>
+    </body>
+</html>
